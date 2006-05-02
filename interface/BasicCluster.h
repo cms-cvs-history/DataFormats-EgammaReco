@@ -7,7 +7,7 @@
  *
  * \author Luca Lista, INFN
  *
- * \version $Id: BasicCluster.h,v 1.2 2006/04/12 15:19:15 rahatlou Exp $
+ * \version $Id: BasicCluster.h,v 1.4 2006/04/26 19:50:34 askew Exp $
  *
  */
 #include "DataFormats/Math/interface/Point3D.h"
@@ -53,7 +53,7 @@ namespace reco {
     //              int superClusterId,
     //             const Point & position = Point( 0, 0, 0 ) );
 
-    BasicCluster( const double energy, const Point& position, const double chi2 );
+    BasicCluster( const double energy, const Point& position, const double chi2, const std::vector<DetId> usedHits);
 
     virtual std::vector<DetId> getHitsByDetId() const { return usedHits_; }
 
@@ -77,6 +77,7 @@ namespace reco {
 
     /// this method is needed to sort the BasicClusters by energy
     bool operator<(const reco::BasicCluster &otherCluster) const;
+    bool operator==(const BasicCluster& rhs) const;
 
   private:
     /// cluster centroid position
