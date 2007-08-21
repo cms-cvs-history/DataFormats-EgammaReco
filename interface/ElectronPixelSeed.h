@@ -12,8 +12,6 @@
  *
  ************************************************************/
 
-#include "DataFormats/EgammaReco/interface/ElectronPixelSeedFwd.h"
-#include "DataFormats/EgammaReco/interface/SuperCluster.h"
 #include "DataFormats/EgammaReco/interface/SuperClusterFwd.h"
 #include "DataFormats/TrajectorySeed/interface/TrajectorySeed.h"
 #include "DataFormats/TrajectoryState/interface/TrackCharge.h"
