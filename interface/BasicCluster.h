@@ -7,10 +7,11 @@
  *
  * \author Luca Lista, INFN
  *
- * \version $Id: BasicCluster.h,v 1.7 2006/05/23 16:25:46 askew Exp $
+ * \version $Id: BasicCluster.h,v 1.8.2.1 2007/08/21 13:25:33 ratnik Exp $
  *
  */
 #include "DataFormats/Math/interface/Point3D.h"
+#include "Rtypes.h" 
 #include "DataFormats/DetId/interface/DetId.h"
 #include "DataFormats/EgammaReco/interface/BasicClusterFwd.h"
 #include "DataFormats/EgammaReco/interface/EcalCluster.h"
